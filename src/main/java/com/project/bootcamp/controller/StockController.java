@@ -13,7 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin //o backend está liberando de origem distinta (navegador)
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/stock")
 public class StockController {
@@ -21,7 +21,7 @@ public class StockController {
     @Autowired
     private StockService service;
 
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)//consumindo json e retornando json
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<StockDTO> save(@Valid @RequestBody StockDTO dto){
         return  ResponseEntity.ok(service.save(dto));
     }

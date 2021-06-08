@@ -17,4 +17,4 @@ spring:
       ddl-auto: none
 
 application:
-  description: Projeto criado para o Bootcamp DIO - Santander / Backend - Juce Duarte
+  description: Projeto criado para o Bootcamp DIO - Santander / Backend / Juce Duarte
